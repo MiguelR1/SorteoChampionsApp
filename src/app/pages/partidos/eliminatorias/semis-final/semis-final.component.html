@@ -1,0 +1,278 @@
+<div class="mt-10">
+<h2 class="text-2xl text-center">FASES FINALES</h2>
+
+<div class="flex justify-between m-8 mt-5">
+
+  <div class="flex">
+    <div class="flex flex-col">
+
+      <div class="flex">
+
+        <table class="border border-white m-5 me-3 w-56">
+          <tbody>
+            <tr>
+              <td class="border border-white py-2 px-5 flex w-100 items-center">
+                <img width="30px" height="30px" srcset="{{partidosCuartos.ida[0].localimg}}" alt="">
+                <span class="ms-3">
+                  {{partidosCuartos.ida[0].local}}
+                </span>
+              </td>
+            </tr>
+
+              <tr>
+                <td class="border border-white py-2 px-5 flex w-100 items-center">
+                  <img width="30px" height="30px" srcset="{{partidosCuartos.ida[0].visitanteimg}}" alt="">
+                  <span class="ms-3">
+                    {{partidosCuartos.ida[0].visitante}}
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+
+        <div class="inline-flex items-center ">
+          <table class="border border-white items-center w-52">
+                  <td class="border border-white py-2 px-3 flex items-center">
+                    <img width="30px" height="30px" srcset="{{semisClasificados[0].img}}" alt="">
+                    <span class="ms-3">
+                      {{semisClasificados[0].name}}
+                    </span>
+                  </td>
+          </table>
+        </div>
+      </div>
+
+  <div class="flex">
+    <table class="border border-white m-5 me-3 w-56">
+      <tbody>
+        <tr>
+          <td class="border border-white py-2 px-5 flex w-100 items-center">
+            <img width="30px" height="30px" srcset="{{partidosCuartos.ida[1].localimg}}" alt="">
+            <span class="ms-3">
+              {{partidosCuartos.ida[1].local}}
+            </span>
+          </td>
+        </tr>
+
+          <tr>
+            <td class="border border-white py-2 px-5 flex w-100 items-center">
+              <img width="30px" height="30px" srcset="{{partidosCuartos.ida[1].visitanteimg}}" alt="">
+              <span class="ms-3">
+                {{partidosCuartos.ida[1].visitante}}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+
+    <div class="inline-flex items-center ">
+      <table class="border border-white items-center w-52">
+              <td class="border border-white py-2 px-3 flex items-center">
+                <img width="30px" height="30px" srcset="{{semisClasificados[1].img}}" alt="">
+                <span class="ms-3">
+                  {{semisClasificados[1].name}}
+                </span>
+              </td>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  @if (finalistas.finalista1!='') {
+    <!-- Finalista 1 -->
+    <div class="inline-flex items-center ms-4">
+      <table class="border border-white items-center w-44">
+              <td class="border border-white py-2 px-3 flex items-center">
+                <img width="30px" height="30px" srcset="{{finalistas.finalista1img}}" alt="">
+                <span class="ms-3">
+                  {{finalistas.finalista1}}
+                </span>
+              </td>
+      </table>
+    </div>
+  }
+
+</div>
+
+
+<div class="flex">
+@if (finalistas.finalista2!='') {
+  <!-- Finalista 2 -->
+
+  <div class="inline-flex items-center me-4">
+    <table class="border border-white items-center w-44">
+            <td class="border border-white py-2 px-3 flex items-center">
+              <img width="30px" height="30px" srcset="{{finalistas.finalista2img}}" alt="">
+              <span class="ms-3">
+                {{finalistas.finalista2}}
+              </span>
+            </td>
+    </table>
+  </div>
+}
+
+  <div class="flex flex-col">
+
+    <div class="flex">
+      <div class="inline-flex items-center ">
+        <table class="border border-white w-52 items-center">
+                <td class="border border-white py-2 px-5 flex items-center">
+                  <img width="30px" height="30px" srcset="{{semisClasificados[2].img}}" alt="">
+                  <span class="ms-3">
+                    {{semisClasificados[2].name}}
+                  </span>
+                </td>
+        </table>
+      </div>
+
+      <table class="border border-white m-5 ms-3 w-56">
+        <tbody>
+          <tr>
+            <td class="border border-white py-2 px-5 flex w-100 items-center">
+              <img width="30px" height="30px" srcset="{{partidosCuartos.ida[2].localimg}}" alt="">
+              <span class="ms-3">
+                {{partidosCuartos.ida[2].local}}
+              </span>
+            </td>
+          </tr>
+
+            <tr>
+              <td class="border border-white py-2 px-5 flex w-100 items-center">
+                <img width="30px" height="30px" srcset="{{partidosCuartos.ida[2].visitanteimg}}" alt="">
+                <span class="ms-3">
+                  {{partidosCuartos.ida[2].visitante}}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+
+      </table>
+    </div>
+
+    <div class="flex">
+
+      <div class="inline-flex items-center ">
+        <table class="border border-white items-center w-52">
+                <td class="border border-white py-2 px-5 flex items-center">
+                  <img width="30px" height="30px" srcset="{{semisClasificados[3].img}}" alt="">
+                  <span class="ms-3">
+                    {{semisClasificados[3].name}}
+                  </span>
+                </td>
+        </table>
+      </div>
+
+      <table class="border border-white m-5 ms-3 w-56">
+        <tbody>
+          <tr>
+            <td class="border border-white py-2 px-5 flex w-100 items-center">
+              <img width="30px" height="30px" srcset="{{partidosCuartos.ida[3].localimg}}" alt="">
+              <span class="ms-3">
+                {{partidosCuartos.ida[3].local}}
+              </span>
+            </td>
+          </tr>
+
+            <tr>
+              <td class="border border-white py-2 px-5 flex w-100 items-center">
+                <img width="30px" height="30px" srcset="{{partidosCuartos.ida[3].visitanteimg}}" alt="">
+                <span class="ms-3">
+                  {{partidosCuartos.ida[3].visitante}}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+<div class="mx-10">
+  <div class="flex flex-col items-center m-5">
+
+    <h2 class="text-xl uppercase">Partidos de ida</h2>
+
+    <div class="flex m-3 mb-10">
+      <form [formGroup]="semis1idaForm" (submit)="partidosSemis()" class="m-4 mx-10 flex items-center">
+        <img width="30px" srcset="{{semisClasificados[0].img}}" alt="">
+        <label class="mx-3 w-24">{{semisClasificados[0].name}}</label>
+        <input formControlName="pegoles" type="number" class="w-10 mx-3 text-black text-center">
+        <span>-</span>
+        <input formControlName="segoles" type="number" class="w-10 mx-3 text-black text-center">
+        <label class="mx-3 w-24">{{semisClasificados[1].name}}</label>
+        <img width="30px" srcset="{{semisClasificados[1].img}}" alt="">
+      </form>
+
+      <form [formGroup]="semis2idaForm" class="m-4 mx-10 flex items-center">
+        <img width="30px" srcset="{{semisClasificados[2].img}}" alt="">
+        <label class="mx-3 w-24">{{semisClasificados[2].name}}</label>
+        <input formControlName="pegoles" type="number" class="w-10 mx-3 text-black text-center">
+        <span>-</span>
+        <input formControlName="segoles" type="number" class="w-10 mx-3 text-black text-center">
+        <label class="mx-3 w-24">{{semisClasificados[3].name}}</label>
+        <img width="30px" srcset="{{semisClasificados[3].img}}" alt="">
+      </form>
+
+
+    </div>
+
+    <h2 class="text-xl uppercase">Partidos de vuelta</h2>
+
+    <div class="flex m-3">
+      <form [formGroup]="semis1vueltaForm" class="m-4 mx-10 flex items-center">
+        <img width="30px" src="{{semisClasificados[1].img}}" alt="">
+        <label class="mx-3 w-24">{{semisClasificados[1].name}}</label>
+        <input formControlName="segoles" type="number" class="w-10 mx-3 text-black text-center">
+        <span>-</span>
+        <input formControlName="pegoles" type="number" class="w-10 mx-3 text-black text-center">
+        <label class="mx-3 w-24">{{semisClasificados[0].name}}</label>
+        <img width="30px" src="{{semisClasificados[0].img}}" alt="">
+      </form>
+
+      <form [formGroup]="semis2vueltaForm" class="m-4 mx-10 flex items-center">
+        <img width="30px" src="{{semisClasificados[3].img}}" alt="">
+        <label class="mx-3 w-24">{{semisClasificados[3].name}}</label>
+        <input formControlName="segoles" type="number" class="w-10 mx-3 text-black text-center">
+        <span>-</span>
+        <input formControlName="pegoles" type="number" class="w-10 mx-3 text-black text-center">
+        <label class="mx-3 w-24">{{semisClasificados[2].name}}</label>
+        <img width="30px" src="{{semisClasificados[2].img}}" alt="">
+      </form>
+    </div>
+    <div class="flex">
+      <button (click)="partidosSemis()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded me-10">Terminar</button>
+      <button (click)="partidosSemis()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ms-10">Siguiente fase</button>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- Pendiente -->
+
+@if (finalistas.finalista1!=''&&finalistas.finalista2!='') {
+  <div class="flex flex-col justify-center items-center m-10 pb-10">
+    <h2 class="uppercase text-lg">Final de Champions League</h2>
+    <div class="flex m-3">
+    <form [formGroup]="finalForm" (submit)="campeonesModal()" class="m-4 flex items-center">
+        <img width="30px" src="{{finalistas.finalista1img}}" alt="">
+        <label class="mx-3 w-24">{{finalistas.finalista1}}</label>
+        <input formControlName="pequipoGoles" type="number" class="w-10 mx-3 text-black text-center">
+        <span>-</span>
+        <input formControlName="sequipoGoles" type="number" class="w-10 mx-3 text-black text-center">
+        <label class="mx-3 w-24">{{finalistas.finalista2}}</label>
+        <img width="30px" src="{{finalistas.finalista2img}}" alt="">
+      </form>
+    </div>
+
+    <div >
+      <button (click)="campeonesModal()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex justify-end items-end">FINALIZAR TORNEO</button>
+    </div>
+
+  </div>
+}
+

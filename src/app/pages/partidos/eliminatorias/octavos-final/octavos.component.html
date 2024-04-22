@@ -1,0 +1,842 @@
+<div class="m-10 mb-6">
+
+<span class="text-2xl uppercase text-center flex justify-center">Fases Eliminatorias</span>
+
+<h2 class="text-xl my-3">A continuación los clasificados</h2>
+
+<div class="grid grid-cols-4">
+
+<table class="border border-white m-3">
+
+  <thead>
+    <tr class="border border-white tablehead">
+      <span class="my-10 text-lg mx-3">
+        Group A
+      </span>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        @for (equipo of grupoA ; track $index;) {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{equipo.img}}" alt="{{equipo.name}}">
+            <span class="ms-2 text-xs">
+              {{equipo.name}}
+            </span>
+          </td>
+        }
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-3">
+
+  <thead>
+    <tr class="border border-white tablehead">
+      <span class="my-10 text-lg mx-3">
+        Group B
+      </span>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        @for (equipo of grupoB ; track $index;) {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{equipo.img}}" alt="{{equipo.name}}">
+            <span class="ms-2 text-xs">
+              {{equipo.name}}
+            </span>
+          </td>
+        }
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-3">
+
+  <thead>
+    <tr class="border border-white tablehead">
+      <span class="my-10 text-lg mx-3">
+        Group C
+      </span>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        @for (equipo of grupoC; track $index;) {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{equipo.img}}" alt="{{equipo.name}}">
+            <span class="ms-2 text-xs">
+              {{equipo.name}}
+            </span>
+          </td>
+        }
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-3">
+
+  <thead>
+    <tr class="border border-white tablehead">
+      <span class="my-10 text-lg mx-3">
+        Group D
+      </span>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        @for (equipo of grupoD ; track $index;) {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{equipo.img}}" alt="{{equipo.name}}">
+            <span class="ms-2 text-xs">
+              {{equipo.name}}
+            </span>
+          </td>
+        }
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-3">
+
+  <thead>
+    <tr class="border border-white tablehead">
+      <span class="my-10 text-lg mx-3">
+        Group E
+      </span>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        @for (equipo of grupoE ; track $index;) {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{equipo.img}}" alt="{{equipo.name}}">
+            <span class="ms-2 text-xs">
+              {{equipo.name}}
+            </span>
+          </td>
+        }
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-3">
+
+  <thead>
+    <tr class="border border-white tablehead">
+      <span class="my-10 text-lg mx-3">
+        Group F
+      </span>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        @for (equipo of grupoF ; track $index;) {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{equipo.img}}" alt="{{equipo.name}}">
+            <span class="ms-2 text-xs">
+              {{equipo.name}}
+            </span>
+          </td>
+        }
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-3">
+
+  <thead>
+    <tr class="border border-white tablehead">
+      <span class="my-10 text-lg mx-3">
+        Group G
+      </span>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        @for (equipo of grupoG; track $index;) {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{equipo.img}}" alt="{{equipo.name}}">
+            <span class="ms-2 text-xs">
+              {{equipo.name}}
+            </span>
+          </td>
+        }
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-3">
+
+  <thead>
+    <tr class="border border-white tablehead">
+      <span class="my-10 text-lg mx-3">
+        Group H
+      </span>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        @for (equipo of grupoH ; track $index;) {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{equipo.img}}" alt="{{equipo.name}}">
+            <span class="ms-2 text-xs">
+              {{equipo.name}}
+            </span>
+          </td>
+        }
+   </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+<div class="flex flex-col items-center justify-center mb-7">
+
+<div class="flex">
+
+    <div class="mx-8 text-center">
+
+      <button class="bg-blue-500 hover:bg-blue-700 text-sm font-bold py-1 px-3 rounded mb-4" (click)="sEquipo(1)">SACAR EQUIPO</button>
+
+      <div class="bg-black border p-5 text-center mb-2">
+        {{bpLugar.length}} equipos
+      </div>
+      <span>Campeones de grupo</span>
+    </div>
+
+    <div class="mx-8 text-center">
+
+      <button class="bg-blue-500 hover:bg-blue-700 text-sm font-bold py-1 px-3 rounded mb-4" (click)="sEquipo(2)">SACAR EQUIPO</button>
+
+      <div class="bg-black border p-5 text-center mb-2">
+        {{bsLugar.length}} equipos
+      </div>
+      <span>Segundos lugar</span>
+    </div>
+
+  </div>
+
+  <div class="flex justify-center w-9/12 text-xl mt-5">
+    <span><b>NOTA:</b> Aquí tienes 2 bowls con los primeros y segundos lugares, tienes que sacar los campeones de grupo primero y despues los segundos lugares.</span>
+  </div>
+
+  @if (es == true) {
+    <span class="mt-3 text-center">{{equipoSacado.name}}</span>
+
+    <button class="bg-blue-500 hover:bg-blue-700 text-sm font-bold py-1 px-3 rounded mb-4 mt-3" (click)="grupoRandom()">SACAR ENCUENTRO</button>
+
+    <div class="bg-black border p-5 text-center">
+      {{gruposPosibles.length}} equipos posibles
+    </div>
+  }
+
+</div>
+
+  <h2 class="text-xl text-center uppercase">Octavos de final</h2>
+
+<div class="mx-16 grid grid-cols-4 mt-4">
+
+<table class="border border-white m-4">
+  <tbody >
+    <tr>
+
+      @if (octavosP.partido1[0]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido1[0].img}}" alt="{{octavosP.partido1[0].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido1[0].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 1
+            </span>
+          </td>
+      }
+
+      @if (octavosP.partido1[1]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido1[1].img}}" alt="{{octavosP.partido1[1].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido1[1].name}}
+            </span>
+
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 2
+            </span>
+          </td>
+      }
+
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-4">
+  <tbody >
+    <tr>
+
+      @if (octavosP.partido2[0]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido2[0].img}}" alt="{{octavosP.partido2[0].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido2[0].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 1
+            </span>
+          </td>
+      }
+
+      @if (octavosP.partido2[1]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido2[1].img}}" alt="{{octavosP.partido2[1].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido2[1].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 2
+            </span>
+          </td>
+      }
+
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-4">
+  <tbody >
+    <tr >
+
+      @if (octavosP.partido3[0]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido3[0].img}}" alt="{{octavosP.partido3[0].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido3[0].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 1
+            </span>
+          </td>
+      }
+
+      @if (octavosP.partido3[1]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido3[1].img}}" alt="{{octavosP.partido3[1].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido3[1].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 2
+            </span>
+          </td>
+      }
+
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-4">
+  <tbody >
+    <tr >
+
+      @if (octavosP.partido4[0]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido4[0].img}}" alt="{{octavosP.partido4[0].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido4[0].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 1
+            </span>
+          </td>
+      }
+
+      @if (octavosP.partido4[1]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido4[1].img}}" alt="{{octavosP.partido4[1].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido4[1].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 2
+            </span>
+          </td>
+      }
+
+   </tr>
+  </tbody>
+</table>
+<table class="border border-white m-4">
+  <tbody >
+    <tr >
+
+      @if (octavosP.partido5[0]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido5[0].img}}" alt="{{octavosP.partido5[0].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido5[0].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 1
+            </span>
+          </td>
+      }
+
+      @if (octavosP.partido5[1]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido5[1].img}}" alt="{{octavosP.partido5[1].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido5[1].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 2
+            </span>
+          </td>
+      }
+
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-4">
+  <tbody >
+    <tr >
+
+      @if (octavosP.partido6[0]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido6[0].img}}" alt="{{octavosP.partido6[0].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido6[0].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 1
+            </span>
+          </td>
+      }
+
+      @if (octavosP.partido6[1]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido6[1].img}}" alt="{{octavosP.partido6[1].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido6[1].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 2
+            </span>
+          </td>
+      }
+
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-4">
+  <tbody >
+    <tr >
+
+      @if (octavosP.partido7[0]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido7[0].img}}" alt="{{octavosP.partido7[0].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido7[0].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 1
+            </span>
+          </td>
+      }
+
+      @if (octavosP.partido7[1]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido7[1].img}}" alt="{{octavosP.partido7[1].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido7[1].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 2
+            </span>
+          </td>
+      }
+
+   </tr>
+  </tbody>
+</table>
+
+<table class="border border-white m-4">
+  <tbody >
+    <tr >
+
+      @if (octavosP.partido8[0]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido8[0].img}}" alt="{{octavosP.partido8[0].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido8[0].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 1
+            </span>
+          </td>
+      }
+
+      @if (octavosP.partido8[1]) {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="{{octavosP.partido8[1].img}}" alt="{{octavosP.partido8[1].name}}">
+            <span class="ms-4 text-xs">
+              {{octavosP.partido8[1].name}}
+            </span>
+          </td>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+          <img class="equipoOctavos" srcset="assets/equipoDesconocido.png">
+            <span class="ms-2 text-xs">
+              Equipo 2
+            </span>
+          </td>
+      }
+
+   </tr>
+  </tbody>
+</table>
+
+</div>
+
+<div class="m-4">
+
+  @if ( octavosIda.length > 0) {
+
+  <h2 class="text-2xl">Partidos de la ida de octavos de final</h2>
+
+<div class="flex flex-col justify-center">
+
+  <div class="grid grid-cols-2 grid-rows-4">
+
+  <form [formGroup]="oct1" action="" class="m-5 mb-1 flex justify-center items-center">
+
+    <img class="equipoOctavos" srcset="{{octavosIda[0].localimg}}" alt="">
+
+    <label class="mx-4 w-24 text-xs">{{octavosIda[0].local}}</label>
+
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center" placeholder="0">
+
+    <span class="mx-5">-</span>
+
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center" placeholder="0">
+
+    <label class="mx-4 w-24 text-xs">{{octavosIda[0].visitante}}</label>
+
+    <img class="equipoOctavos" srcset="{{octavosIda[0].visitanteimg}}" alt="">
+
+  </form>
+
+  <form [formGroup]="oct2" action="" class="m-5 flex justify-center items-center">
+    <img class="equipoOctavos" srcset="{{octavosIda[1].localimg}}" alt="">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[1].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[1].visitante}}</label>
+    <img class="equipoOctavos" srcset="{{octavosIda[1].visitanteimg}}" alt="">
+  </form>
+
+  <form [formGroup]="oct3" action="" class="m-5 flex justify-center items-center">
+    <img class="equipoOctavos" srcset="{{octavosIda[2].localimg}}" alt="">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[2].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[2].visitante}}</label>
+    <img class="equipoOctavos" srcset="{{octavosIda[2].visitanteimg}}" alt="">
+  </form>
+
+  <form [formGroup]="oct4" action="" class="m-5 flex justify-center items-center">
+    <img class="equipoOctavos" srcset="{{octavosIda[3].localimg}}" alt="">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[3].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[3].visitante}}</label>
+    <img class="equipoOctavos" srcset="{{octavosIda[3].visitanteimg}}" alt="">
+  </form>
+
+  <form [formGroup]="oct5" action="" class="m-5 flex justify-center items-center">
+    <img class="equipoOctavos" srcset="{{octavosIda[4].localimg}}" alt="">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[4].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[4].visitante}}</label>
+    <img class="equipoOctavos" srcset="{{octavosIda[4].visitanteimg}}" alt="">
+  </form>
+
+  <form [formGroup]="oct6" action="" class="m-5 flex justify-center items-center">
+    <img class="equipoOctavos" srcset="{{octavosIda[5].localimg}}" alt="">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[5].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[5].visitante}}</label>
+    <img class="equipoOctavos" srcset="{{octavosIda[5].visitanteimg}}" alt="">
+  </form>
+
+  <form [formGroup]="oct7" action="" class="m-5 flex justify-center items-center">
+    <img class="equipoOctavos" srcset="{{octavosIda[6].localimg}}" alt="">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[6].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[6].visitante}}</label>
+    <img class="equipoOctavos" srcset="{{octavosIda[6].visitanteimg}}" alt="">
+  </form>
+
+  <form [formGroup]="oct8" action="" class="m-5 flex justify-center items-center">
+    <img class="equipoOctavos" srcset="{{octavosIda[7].localimg}}" alt="">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[7].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label class="mx-4 w-24 text-xs">{{octavosIda[7].visitante}}</label>
+    <img class="equipoOctavos" srcset="{{octavosIda[7].visitanteimg}}" alt="">
+  </form>
+</div>
+
+<div class="flex justify-center">
+  <button class="m-5 bg-blue-500 hover:bg-blue-700 text-white font-medium py-1 px-3 rounded" (click)="formOctIda()">Enviar resultados</button>
+</div>
+
+</div>
+
+}
+</div>
+
+<div class="m-4">
+@if (
+    octavosVuelta.length > 0) {
+
+<h2 class="text-2xl">Partidos de la vuelta de octavos de final</h2>
+
+<div class="flex flex-col justify-center">
+<div class="grid grid-cols-2 grid-rows-4">
+
+  <div>
+  <form [formGroup]="octv1" action="" class="m-5 mb-1 flex justify-center items-center">
+    <img [ngClass]="clasificados.primerP.clasificado11Equipo ? 'imgclasifico' : '' "  class="equipoesc" srcset="{{octavosVuelta[0].localimg}}" alt="">
+    <label [ngClass]="clasificados.primerP.clasificado11Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[0].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label [ngClass]="clasificados.primerP.clasificado12Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[0].visitante}}</label>
+    <img [ngClass]="clasificados.primerP.clasificado12Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[0].visitanteimg}}" alt="">
+  </form>
+
+  <div class="flex justify-center">
+    <span> ( {{resultados[0].golSegundoEquipo}} )</span>
+    <span class="mx-1"> - </span>
+    <span>( {{resultados[0].golPrimerEquipo}} ) </span>
+  </div>
+</div>
+
+<div>
+  <form [formGroup]="octv2" action="" class="m-5 mb-1 flex justify-center items-center">
+    <img [ngClass]="clasificados.segundoP.clasificado21Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[1].localimg}}" alt="">
+    <label [ngClass]="clasificados.segundoP.clasificado21Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[1].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label [ngClass]="clasificados.segundoP.clasificado22Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[1].visitante}}</label>
+    <img [ngClass]="clasificados.segundoP.clasificado22Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[1].visitanteimg}}" alt="">
+  </form>
+
+  <div class="flex justify-center">
+    <span> ( {{resultados[1].golSegundoEquipo}} )</span>
+    <span class="mx-1"> - </span>
+    <span>( {{resultados[1].golPrimerEquipo}} ) </span>
+  </div>
+</div>
+
+<div>
+  <form [formGroup]="octv3" action="" class="m-5 mb-1 flex justify-center items-center">
+    <img [ngClass]="clasificados.terceroP.clasificado31Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[2].localimg}}" alt="">
+    <label [ngClass]="clasificados.terceroP.clasificado31Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[2].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label [ngClass]="clasificados.terceroP.clasificado32Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[2].visitante}}</label>
+    <img [ngClass]="clasificados.terceroP.clasificado32Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[2].visitanteimg}}" alt="">
+  </form>
+  <div class="flex justify-center">
+    <span> ( {{resultados[2].golSegundoEquipo}} )</span>
+    <span class="mx-1"> - </span>
+    <span>( {{resultados[2].golPrimerEquipo}} ) </span>
+  </div>
+</div>
+
+<div>
+  <form [formGroup]="octv4" action="" class="m-5 mb-1 flex justify-center items-center">
+    <img [ngClass]="clasificados.cuartoP.clasificado41Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[3].localimg}}" alt="">
+    <label [ngClass]="clasificados.cuartoP.clasificado41Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[3].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label [ngClass]="clasificados.cuartoP.clasificado42Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[3].visitante}}</label>
+    <img [ngClass]="clasificados.cuartoP.clasificado42Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[3].visitanteimg}}" alt="">
+  </form>
+  <div class="flex justify-center">
+    <span> ( {{resultados[3].golSegundoEquipo}} )</span>
+    <span class="mx-1"> - </span>
+    <span>( {{resultados[3].golPrimerEquipo}} ) </span>
+  </div>
+</div>
+
+<div>
+  <form [formGroup]="octv5" action="" class="m-5 mb-1 flex justify-center items-center">
+    <img [ngClass]="clasificados.quintoP.clasificado51Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[4].localimg}}" alt="">
+    <label [ngClass]="clasificados.quintoP.clasificado51Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[4].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label [ngClass]="clasificados.quintoP.clasificado52Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[4].visitante}}</label>
+    <img [ngClass]="clasificados.quintoP.clasificado52Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[4].visitanteimg}}" alt="">
+  </form>
+
+  <div class="flex justify-center">
+    <span> ( {{resultados[4].golSegundoEquipo}} )</span>
+    <span class="mx-1"> - </span>
+    <span>( {{resultados[4].golPrimerEquipo}} ) </span>
+  </div>
+</div>
+
+<div>
+  <form [formGroup]="octv6" action="" class="m-5 mb-1 flex justify-center items-center">
+    <img [ngClass]="clasificados.sextoP.clasificado61Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[5].localimg}}" alt="">
+    <label [ngClass]="clasificados.sextoP.clasificado61Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[5].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label [ngClass]="clasificados.sextoP.clasificado62Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[5].visitante}}</label>
+    <img [ngClass]="clasificados.sextoP.clasificado62Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[5].visitanteimg}}" alt="">
+  </form>
+  <div class="flex justify-center">
+    <span> ( {{resultados[5].golSegundoEquipo}} )</span>
+    <span class="mx-1"> - </span>
+    <span>( {{resultados[5].golPrimerEquipo}} ) </span>
+  </div>
+</div>
+
+<div>
+  <form [formGroup]="octv7" action="" class="m-5 mb-1 flex justify-center items-center">
+    <img [ngClass]="clasificados.septimoP.clasificado71Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[6].localimg}}" alt="">
+    <label [ngClass]="clasificados.septimoP.clasificado71Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[6].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label [ngClass]="clasificados.septimoP.clasificado72Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[6].visitante}}</label>
+    <img [ngClass]="clasificados.septimoP.clasificado72Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[6].visitanteimg}}" alt="">
+  </form>
+
+  <div class="flex justify-center">
+    <span> ( {{resultados[6].golSegundoEquipo}} )</span>
+    <span class="mx-1"> - </span>
+    <span>( {{resultados[6].golPrimerEquipo}} ) </span>
+  </div>
+</div>
+
+<div>
+  <form [formGroup]="octv8" action="" class="m-5 mb-1 flex justify-center items-center">
+    <img [ngClass]="clasificados.octavoP.clasificado81Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[7].localimg}}" alt="">
+    <label [ngClass]="clasificados.octavoP.clasificado81Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[7].local}}</label>
+    <input formControlName="local" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <span class="mx-5">-</span>
+    <input formControlName="visitante" type="number" class="w-9 text-xs text-black p-1 text-center">
+    <label [ngClass]="clasificados.octavoP.clasificado82Equipo ? 'clasifico' : '' " class="mx-4 w-24">{{octavosVuelta[7].visitante}}</label>
+    <img [ngClass]="clasificados.octavoP.clasificado82Equipo ? 'imgclasifico' : '' " class="equipoesc" srcset="{{octavosVuelta[7].visitanteimg}}" alt="">
+  </form>
+
+  <div class="flex justify-center">
+    <span> ( {{resultados[7].golSegundoEquipo}} )</span>
+    <span class="mx-1"> - </span>
+    <span>( {{resultados[7].golPrimerEquipo}} ) </span>
+  </div>
+</div>
+
+</div>
+
+<div class="flex justify-center">
+  <button class="m-5 bg-blue-500 hover:bg-blue-700 text-white font-medium py-1 px-3 rounded" (click)="formOctVuelta()">Enviar resultados</button>
+</div>
+
+</div>
+
+}
+
+<button class="m-5 bg-blue-500 hover:bg-blue-700 text-white font-medium py-1 px-3 rounded">Ver clasificados</button>
+
+</div>

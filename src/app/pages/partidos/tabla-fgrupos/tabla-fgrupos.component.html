@@ -1,0 +1,375 @@
+
+<div class="flex justify-center">
+  <div class="grid grid-cols-4">
+
+    <table class="border border-white m-10 mt-4">
+      <thead class="">
+        <tr class="border border-white tablehead">
+          <td class="border border-white py-2 px-4">
+            <span class="my-10 text-lg">
+              Group A
+            </span>
+          </td>
+
+          <td class="border border-white py-2 px-3">
+            <span class="my-10 text-lg">
+              PJ
+            </span>
+          </td>
+
+          <td class="border border-white py-2 px-3">
+            <span class="my-10 text-lg">
+              PTS
+            </span>
+          </td>
+
+        </tr>
+      </thead>
+
+      <tbody>
+        @for (equipo of fasesgrupos.grupof1; track $index) {
+          <tr>
+            <td class="border border-white py-2 px-4 flex items-center w-44 h-14">
+              <img [src]="equipo.img" width="30px" alt="">
+              <span class="ms-2 text-sm">{{equipo.name}}</span>
+            </td>
+
+            <td class="border border-white py-2 px-4 text-center">
+              <span>{{equipo.partidos}}</span>
+            </td>
+
+            <td class="border border-white py-2 px-4 text-center">
+              <span>{{equipo.puntos}}</span>
+            </td>
+      </tr>
+        }
+
+      </tbody>
+    </table>
+
+  <table class="border border-white m-10 mt-4">
+    <thead class="">
+      <tr class="border border-white tablehead">
+        <td class="border border-white py-2 px-4">
+          <span class="my-10 text-lg">
+            Group B
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PJ
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PTS
+          </span>
+        </td>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (equipo of fasesgrupos.grupof2; track $index) {
+        <tr>
+          <td class="border border-white py-2 px-4 flex items-center w-44 h-14">
+            <img [src]="equipo.img" width="30px" alt="">
+            <span class="ms-2 text-sm">{{equipo.name}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.partidos}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.puntos}}</span>
+          </td>
+    </tr>
+      }
+
+    </tbody>
+  </table>
+
+  <table class="border border-white m-10 mt-4">
+    <thead class="">
+      <tr class="border border-white tablehead">
+        <td class="border border-white py-2 px-4">
+          <span class="my-10 text-lg">
+            Group C
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PJ
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PTS
+          </span>
+        </td>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (equipo of fasesgrupos.grupof3; track $index) {
+        <tr>
+          <td class="border border-white py-2 px-4 flex items-center w-44 h-14">
+            <img [src]="equipo.img" width="30px" alt="">
+            <span class="ms-2 text-sm">{{equipo.name}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.partidos}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.puntos}}</span>
+          </td>
+    </tr>
+      }
+
+    </tbody>
+  </table>
+
+  <table class="border border-white m-10 mt-4 w-100">
+    <thead class="">
+      <tr class="border border-white tablehead">
+        <td class="border border-white py-2 px-4">
+          <span class="my-10 text-lg">
+            Group D
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PJ
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PTS
+          </span>
+        </td>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (equipo of fasesgrupos.grupof4; track $index) {
+        <tr>
+          <td class="border border-white py-2 px-4 flex items-center w-44 h-14">
+            <img [src]="equipo.img" width="30px" alt="">
+            <span class="ms-2 text-sm">{{equipo.name}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.partidos}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.puntos}}</span>
+          </td>
+    </tr>
+      }
+
+    </tbody>
+  </table>
+
+  <table class="border border-white m-10 mt-4 w-100">
+    <thead class="">
+      <tr class="border border-white tablehead">
+        <td class="border border-white py-2 px-4">
+          <span class="my-10 text-lg">
+            Group E
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PJ
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PTS
+          </span>
+        </td>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (equipo of fasesgrupos.grupof5; track $index) {
+        <tr>
+          <td class="border border-white py-2 px-4 flex items-center w-44 h-14">
+            <img [src]="equipo.img" width="30px" alt="">
+            <span class="ms-2 text-sm">{{equipo.name}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.partidos}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.puntos}}</span>
+          </td>
+    </tr>
+      }
+
+    </tbody>
+  </table>
+
+  <table class="border border-white m-10 mt-4 w-100">
+    <thead class="">
+      <tr class="border border-white tablehead">
+        <td class="border border-white py-2 px-4">
+          <span class="my-10 text-lg">
+            Group F
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PJ
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PTS
+          </span>
+        </td>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (equipo of fasesgrupos.grupof6; track $index) {
+        <tr>
+          <td class="border border-white py-2 px-4 flex items-center w-44 h-14">
+            <img [src]="equipo.img" width="30px" alt="">
+            <span class="ms-2 text-sm">{{equipo.name}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.partidos}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.puntos}}</span>
+          </td>
+    </tr>
+      }
+
+    </tbody>
+  </table>
+
+  <table class="border border-white m-10 mt-4 w-100">
+    <thead class="">
+      <tr class="border border-white tablehead">
+        <td class="border border-white py-2 px-4">
+          <span class="my-10 text-lg">
+            Group G
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PJ
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PTS
+          </span>
+        </td>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (equipo of fasesgrupos.grupof7; track $index) {
+        <tr>
+          <td class="border border-white py-2 px-4 flex items-center w-44 h-14">
+            <img [src]="equipo.img" width="30px" alt="">
+            <span class="ms-2 text-sm">{{equipo.name}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.partidos}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.puntos}}</span>
+          </td>
+    </tr>
+      }
+
+    </tbody>
+  </table>
+
+  <table class="border border-white m-10 mt-4 w-100">
+    <thead class="">
+      <tr class="border border-white tablehead">
+        <td class="border border-white py-2 px-4">
+          <span class="my-10 text-lg">
+            Group H
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PJ
+          </span>
+        </td>
+
+        <td class="border border-white py-2 px-3">
+          <span class="my-10 text-lg">
+            PTS
+          </span>
+        </td>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (equipo of fasesgrupos.grupof8; track $index) {
+        <tr>
+          <td class="border border-white py-2 px-4 flex items-center w-44 h-14">
+            <img [src]="equipo.img" width="30px" alt="">
+            <span class="ms-2 text-sm">{{equipo.name}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.partidos}}</span>
+          </td>
+
+          <td class="border border-white py-2 px-4 text-center">
+            <span>{{equipo.puntos}}</span>
+          </td>
+    </tr>
+      }
+
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+
+<div class="flex justify-center">
+  <button class="m-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex" [disabled]="kobutton==false" [ngClass]="{'hover:bg-blue-500': kobutton==false}" routerLink="/dashboard/octavos-finales" (click)="kos()">
+    Empezar Jornadas KOs
+  </button>
+
+</div>

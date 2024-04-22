@@ -1,0 +1,358 @@
+
+
+<div class="flex flex-col m-5">
+  <h2 class="text-xl uppercase m-5">Sorteo para cuartos de final</h2>
+
+  <div class="flex flex-col justify-center items-center">
+    <h3 class="text-lg mb-4">Bombo con los equipos que jugaran cuartos de final</h3>
+    <div class="w-48 p-5 bg-black border-white border-4 flex justify-center items-center">
+      <span>{{bomboCuartos.length}} equipos restantes</span>
+      </div>
+    <button (click)="sEquipo()" class="m-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">Sacar equipo</button>
+  </div>
+
+  <div class="flex justify-between m-5">
+
+    <div class="flex flex-col">
+    <table class="border border-white m-5 ms-36 w-56">
+    @if (partidos.primerPartido[0]) {
+      <tbody>
+        <tr>
+          <td class="border border-white py-2 px-5 flex w-100 items-center">
+            <img width="30px" height="30px" srcset="{{partidos.primerPartido[0].img}}" alt="">
+            <span class="ms-3">
+              {{partidos.primerPartido[0].name}}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center w-100">
+          <img class="equipoesc" srcset="assets/equipoDesconocido.png" width="30px" height="30px">
+            <span class="ms-3 text-xs">
+              Equipo 1
+            </span>
+          </td>
+      }
+      @if (partidos.primerPartido[1]) {
+        <tbody>
+          <tr>
+            <td class="border border-white py-2 px-5 flex w-100 items-center">
+              <img width="30px" height="30px" srcset="{{partidos.primerPartido[1].img}}" alt="">
+              <span class="ms-3">
+                {{partidos.primerPartido[1].name}}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      }@else {
+        <td class="border border-white border-t-0 py-2 px-4 flex items-center w-100">
+          <img class="equipoesc" srcset="assets/equipoDesconocido.png" width="30px" height="30px">
+            <span class="ms-3 text-xs">
+              Equipo 2
+            </span>
+          </td>
+      }
+    </table>
+
+    <table class="border border-white m-5 ms-36 w-56">
+      @if (partidos.segundoPartido[0]) {
+        <tbody>
+          <tr>
+            <td class="border border-white py-2 px-5 flex w-100 items-center">
+              <img width="30px" height="30px" srcset="{{partidos.segundoPartido[0].img}}" alt="">
+              <span class="ms-3">
+                {{partidos.segundoPartido[0].name}}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+        }@else {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+            <img class="equipoesc" srcset="assets/equipoDesconocido.png">
+              <span class="ms-3 text-xs">
+                Equipo 1
+              </span>
+            </td>
+        }
+        @if (partidos.segundoPartido[1]) {
+          <tbody>
+            <tr>
+              <td class="border border-white py-2 px-5 flex w-100 items-center">
+                <img width="30px" height="30px" srcset="{{partidos.segundoPartido[1].img}}" alt="">
+                <span class="ms-3">
+                  {{partidos.segundoPartido[1].name}}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        }@else {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+            <img class="equipoesc" srcset="assets/equipoDesconocido.png">
+              <span class="ms-3 text-xs">
+                Equipo 2
+              </span>
+            </td>
+        }
+      </table>
+    </div>
+
+    <div class="flex flex-col">
+    <table class="border border-white m-5 me-36 w-56">
+      @if (partidos.terceroPartido[0]) {
+        <tbody>
+          <tr>
+            <td class="border border-white py-2 px-5 flex w-100 items-center">
+              <img width="30px" height="30px" srcset="{{partidos.terceroPartido[0].img}}" alt="">
+              <span class="ms-3">
+                {{partidos.terceroPartido[0].name}}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+        }@else {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+            <img class="equipoesc" srcset="assets/equipoDesconocido.png">
+              <span class="ms-3 text-xs">
+                Equipo 1
+              </span>
+            </td>
+        }
+        @if (partidos.terceroPartido[1]) {
+          <tbody>
+            <tr>
+              <td class="border border-white py-2 px-5 flex w-100 items-center">
+                <img width="30px" height="30px" srcset="{{partidos.terceroPartido[1].img}}" alt="">
+                <span class="ms-3">
+                  {{partidos.terceroPartido[1].name}}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        }@else {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+            <img class="equipoesc" srcset="assets/equipoDesconocido.png">
+              <span class="ms-3 text-xs">
+                Equipo 2
+              </span>
+            </td>
+        }
+    </table>
+
+    <table class="border border-white m-5 me-36 w-56">
+      @if (partidos.cuartoPartido[0]) {
+        <tbody>
+          <tr>
+            <td class="border border-white py-2 px-5 flex w-100 items-center">
+              <img width="30px" height="30px" srcset="{{partidos.cuartoPartido[0].img}}" alt="">
+              <span class="ms-3">
+                {{partidos.cuartoPartido[0].name}}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+        }@else {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+            <img class="equipoesc" srcset="assets/equipoDesconocido.png">
+              <span class="ms-3 text-xs">
+                Equipo 1
+              </span>
+            </td>
+        }
+        @if (partidos.cuartoPartido[1]) {
+          <tbody>
+            <tr>
+              <td class="border border-white py-2 px-5 flex w-100 items-center">
+                <img width="30px" height="30px" srcset="{{partidos.cuartoPartido[1].img}}" alt="">
+                <span class="ms-3">
+                  {{partidos.cuartoPartido[1].name}}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        }@else {
+          <td class="border border-white border-t-0 py-2 px-4 flex items-center">
+            <img class="equipoesc" srcset="assets/equipoDesconocido.png">
+              <span class="ms-3 text-xs">
+                Equipo 2
+              </span>
+            </td>
+        }
+    </table>
+    </div>
+
+  </div>
+
+
+  @if (mostrarForm) {
+      <div class="flex flex-col">
+
+      <h2 class="text-xl">Partidos cuartos de final ida</h2>
+
+    <div class="grid grid-cols-2 grid-rows-2">
+
+    <form [formGroup]="cuartosPrimerPartido" class="m-5 mb-1 flex justify-center items-center">
+      <img class="equipoesc" srcset="{{partidos.primerPartido[0].img}}" alt="">
+      <label class="mx-4 w-24">{{partidos.primerPartido[0].name}}</label>
+      <input formControlName="golespe" type="number" class="w-9 text-xs text-black p-1 text-center">
+      <span class="mx-5">-</span>
+      <input formControlName="golesse" type="number" class="w-9 text-xs text-black p-1 text-center">
+      <label class="mx-4 w-24">{{partidos.primerPartido[1].name}}</label>
+      <img class="equipoesc" srcset="{{partidos.primerPartido[1].img}}" alt="">
+    </form>
+
+    <form [formGroup]="cuartosSegundoPartido" action="" class="m-5 flex justify-center items-center">
+      <img class="equipoesc" srcset="{{partidos.segundoPartido[0].img}}" alt="">
+      <label class="mx-4 w-24">{{partidos.segundoPartido[0].name}}</label>
+      <input formControlName="golespe" type="number" class="w-9 text-xs text-black p-1 text-center">
+      <span class="mx-5">-</span>
+      <input formControlName="golesse" type="number" class="w-9 text-xs text-black p-1 text-center">
+      <label class="mx-4 w-24">{{partidos.segundoPartido[1].name}}</label>
+      <img class="equipoesc" srcset="{{partidos.segundoPartido[1].img}}" alt="">
+    </form>
+
+    <form [formGroup]="cuartosTerceroPartido" action="" class="m-5 flex justify-center items-center">
+      <img class="equipoesc" srcset="{{partidos.terceroPartido[0].img}}" alt="">
+      <label class="mx-4 w-24">{{partidos.terceroPartido[0].name}}</label>
+      <input formControlName="golespe" type="number" class="w-9 text-xs text-black p-1 text-center">
+      <span class="mx-5">-</span>
+      <input formControlName="golesse" type="number" class="w-9 text-xs text-black p-1 text-center">
+      <label class="mx-4 w-24">{{partidos.terceroPartido[1].name}}</label>
+      <img class="equipoesc" srcset="{{partidos.terceroPartido[1].img}}" alt="">
+    </form>
+
+    <form [formGroup]="cuartosCuartoPartido" action="" class="m-5 flex justify-center items-center">
+      <img class="equipoesc" srcset="{{partidos.cuartoPartido[0].img}}" alt="">
+      <label class="mx-4 w-24">{{partidos.cuartoPartido[0].name}}</label>
+      <input formControlName="golespe" type="number" class="w-9 text-xs text-black p-1 text-center">
+      <span class="mx-5">-</span>
+      <input formControlName="golesse" type="number" class="w-9 text-xs text-black p-1 text-center">
+      <label class="mx-4 w-24">{{partidos.cuartoPartido[1].name}}</label>
+      <img class="equipoesc" srcset="{{partidos.cuartoPartido[1].img}}" alt="">
+    </form>
+  </div>
+
+  <div class="flex justify-center">
+    <button class="my-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded" (click)="cuartosIdaResut()">Enviar resultados</button>
+  </div>
+</div>
+
+    <div class="flex flex-col m-5">
+      <h2 class="text-xl">Partidos cuartos de final vuelta</h2>
+      <div class="grid grid-cols-2 grid-rows-2">
+
+        <div class="flex flex-col">
+          <form [formGroup]="cuartosPrimerPartidoVuelta" class="m-5 mb-1 flex justify-center items-center">
+            <img class="equipoesc" srcset="{{partidos.primerPartido[1].img}}" alt="">
+            <label class="mx-4 w-24">{{partidos.primerPartido[1].name}}</label>
+            <input formControlName="golespe" type="number" class="w-9 text-xs text-black p-1 text-center">
+            <span class="mx-5">-</span>
+            <input formControlName="golesse" type="number" class="w-9 text-xs text-black p-1 text-center">
+            <label class="mx-4 w-24">{{partidos.primerPartido[0].name}}</label>
+            <img class="equipoesc" srcset="{{partidos.primerPartido[0].img}}" alt="">
+          </form>
+
+          @if (mostrarResultado) {
+            <div class="flex justify-center">
+              <span class="mx-1">( {{resultadosCuartos.priPartido.golesv}} )</span>
+              <span class="mx-1">-</span>
+              <span class="mx-1">( {{resultadosCuartos.priPartido.golesl}} )</span>
+            </div>
+          }@else {
+            <div class="flex justify-center">
+              <span class="mx-1">( 0 )</span>
+              <span class="mx-1">-</span>
+              <span class="mx-1">( 0 )</span>
+            </div>
+          }
+        </div>
+
+        <div class="flex flex-col">
+          <form [formGroup]="cuartosSegundoPartidoVuelta" action="" class="m-5 flex justify-center items-center">
+            <img class="equipoesc" srcset="{{partidos.segundoPartido[1].img}}" alt="">
+            <label class="mx-4 w-24">{{partidos.segundoPartido[1].name}}</label>
+            <input formControlName="golespe" type="number" class="w-9 text-xs text-black p-1 text-center">
+            <span class="mx-5">-</span>
+            <input formControlName="golesse" type="number" class="w-9 text-xs text-black p-1 text-center">
+            <label class="mx-4 w-24">{{partidos.segundoPartido[0].name}}</label>
+            <img class="equipoesc" srcset="{{partidos.segundoPartido[0].img}}" alt="">
+          </form>
+          @if (mostrarResultado) {
+            <div class="flex justify-center">
+              <span class="mx-1">( {{resultadosCuartos.segPartido.golesv}} )</span>
+              <span class="mx-1">-</span>
+              <span class="mx-1">( {{resultadosCuartos.segPartido.golesl}} )</span>
+            </div>
+          }@else {
+            <div class="flex justify-center">
+              <span class="mx-1">( 0 )</span>
+              <span class="mx-1">-</span>
+              <span class="mx-1">( 0 )</span>
+            </div>}
+        </div>
+
+          <div class="flex flex-col">
+            <form [formGroup]="cuartosTerceroPartidoVuelta" action="" class="m-5 flex justify-center items-center">
+              <img class="equipoesc" srcset="{{partidos.terceroPartido[1].img}}" alt="">
+              <label class="mx-4 w-24">{{partidos.terceroPartido[1].name}}</label>
+              <input formControlName="golespe" type="number" class="w-9 text-xs text-black p-1 text-center">
+              <span class="mx-5">-</span>
+              <input formControlName="golesse" type="number" class="w-9 text-xs text-black p-1 text-center">
+              <label class="mx-4 w-24">{{partidos.terceroPartido[0].name}}</label>
+              <img class="equipoesc" srcset="{{partidos.terceroPartido[0].img}}" alt="">
+            </form>
+
+            @if (mostrarResultado) {
+              <div class="flex justify-center">
+                <span class="mx-1">( {{resultadosCuartos.terPartido.golesv}} )</span>
+                <span class="mx-1">-</span>
+                <span class="mx-1">( {{resultadosCuartos.terPartido.golesl}} )</span>
+              </div>
+            }@else{
+              <div class="flex justify-center">
+                <span class="mx-1">( 0 )</span>
+                <span class="mx-1">-</span>
+                <span class="mx-1">( 0 )</span>
+              </div>}
+          </div>
+
+          <div class="flex flex-col">
+            <form [formGroup]="cuartosCuartoPartidoVuelta" action="" class="m-5 flex justify-center items-center">
+              <img class="equipoesc" srcset="{{partidos.cuartoPartido[1].img}}" alt="">
+              <label class="mx-4 w-24">{{partidos.cuartoPartido[1].name}}</label>
+              <input formControlName="golespe" type="number" class="w-9 text-xs text-black p-1 text-center">
+              <span class="mx-5">-</span>
+              <input formControlName="golesse" type="number" class="w-9 text-xs text-black p-1 text-center">
+              <label class="mx-4 w-24">{{partidos.cuartoPartido[0].name}}</label>
+              <img class="equipoesc" srcset="{{partidos.cuartoPartido[0].img}}" alt="">
+            </form>
+            @if (mostrarResultado) {
+              <div class="flex justify-center">
+                <span class="mx-1">( {{resultadosCuartos.cuarPartido.golesv}} )</span>
+                <span class="mx-1">-</span>
+                <span class="mx-1">( {{resultadosCuartos.cuarPartido.golesl}} )</span>
+              </div>
+            }@else {
+              <div class="flex justify-center">
+                <span class="mx-1">( 0 )</span>
+                <span class="mx-1">-</span>
+                <span class="mx-1">( 0 )</span>
+              </div>
+            }
+          </div>
+
+        </div>
+
+      <div class="flex justify-center">
+        <button class="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded" (click)="cuartosVueltaResult()">Enviar resultados</button>
+      </div>
+    </div>
+  }
+
+  @if (cfClasificados.length) {
+    <div class="flex justify-center">
+      <button class="m-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded" [routerLink]="['/dashboard/semis-final']">Siguiente Fase</button>
+    </div>
+    }
+
+</div>
